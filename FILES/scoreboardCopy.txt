@@ -1,0 +1,21 @@
+TIME:#68,65#NICK:#Nikodem
+TIME:#31,48#NICK:#Test2
+TIME:#26,7#NICK:#Arek
+TIME:#20,75#NICK:#arek
+TIME:#20,43#NICK:#Tata
+TIME:#19,35#NICK:#kocham kornelke
+TIME:#19,07#NICK:#mistrzu
+TIME:#18,04#NICK:#Nikodem
+TIME:#18,04#NICK:#Nikodem
+TIME:#17,79#NICK:#Nikodem
+TIME:#13,12#NICK:#nikodem
+TIME:#12,78#NICK:#Test1
+TIME:#12,11#NICK:#filip
+TIME:#12,11#NICK:#filip
+TIME:#12,11#NICK:#filip
+TIME:#11,26#NICK:#123aA
+TIME:#11,2#NICK:#Nikodem
+TIME:#11#NICK:#filip
+TIME:#11#NICK:#filip
+TIME:#11#NICK:#filip
+TIME:#11#NICK:#filip
