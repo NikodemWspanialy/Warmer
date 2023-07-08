@@ -172,10 +172,10 @@ namespace BugTraveler
             try
             {
                 Console.WriteLine(name);
-                if (File.Exists(Variable.SCOREBOARD_FILE))
+                if (File.Exists(Variable.SCOREBOARD_PATH))
                 {
                     string newScoreboard = "";
-                    string tempText = File.ReadAllText(Variable.SCOREBOARD_FILE);
+                    string tempText = File.ReadAllText(Variable.SCOREBOARD_PATH);
                     string[] strings = tempText.Split('\n');
                     int columnToWrite = -1;
                     for (int i = 0; i < strings.Length; i++)
@@ -220,11 +220,11 @@ namespace BugTraveler
 
                     }
 
-                    if (File.Exists(Variable.SCOREBOARD_COPY_FILE))
-                        File.Delete(Variable.SCOREBOARD_COPY_FILE);
-                    File.Copy(Variable.SCOREBOARD_FILE, Variable.SCOREBOARD_COPY_FILE);
+                    if (File.Exists(Variable.SCOREBOARD_COPY_PATH))
+                        File.Delete(Variable.SCOREBOARD_COPY_PATH);
+                    File.Copy(Variable.SCOREBOARD_PATH, Variable.SCOREBOARD_COPY_PATH);
 
-                    File.WriteAllText(Variable.SCOREBOARD_FILE, newScoreboard);
+                    File.WriteAllText(Variable.SCOREBOARD_PATH, newScoreboard);
                     return;
 
 

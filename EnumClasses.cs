@@ -11,7 +11,7 @@ namespace BugTraveler
     }
     public enum GameStatus
     {
-        Lobby, InGame, GameOver, About , Scoreboard , AddScore
+        Lobby, InGame, GameOver, About , Scoreboard , AddScore , none
     }
     public enum PlayerDirection
     {

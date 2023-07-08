@@ -13,7 +13,6 @@ namespace BugTraveler
     {
         const float BLOCK_DIV_X = 500;
         const float BLOCK_DIV_Y = 100;
-        const string DISCRIPTION_FILE = @"C:\PRJs\CS_PRJs\PRJs\BugTraveler\FILES\discription.txt";
         const string RETURN_VALUE = "RETURN";
         SFML.Graphics.Color RETURN_BUTTON_COLOR = SFML.Graphics.Color.White;
 
@@ -54,9 +53,9 @@ namespace BugTraveler
             DISCRIPTION_POS_Y = gameY / 2 - 150;
             Discription.Position = new SFML.System.Vector2f(DISCRIPTION_POS_X, DISCRIPTION_POS_Y);
             font = new Font(Variable.FONT_PATH);
-            if (File.Exists(DISCRIPTION_FILE))
+            if (File.Exists(Variable.DESCRIPTION_PATH))
             {
-                using (FileStream fileStream = new FileStream(DISCRIPTION_FILE, FileMode.Open, FileAccess.Read))
+                using (FileStream fileStream = new FileStream(Variable.DESCRIPTION_PATH, FileMode.Open, FileAccess.Read))
                 {
                     using (StreamReader reader = new StreamReader(fileStream))
                     {

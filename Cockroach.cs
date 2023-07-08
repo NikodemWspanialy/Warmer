@@ -19,7 +19,7 @@ namespace BugTraveler
         const int TIME_IN_MIDDLE = 300;
         const int TIME_BEFORE_CHANGE_DIR = 150;
 
-        Texture TEXTURE = new Texture(@"C:\PRJs\CS_PRJs\PRJs\BugTraveler\IMG\Cockroach.png");
+        Texture TEXTURE = new Texture(Variable.COCKROACH_SPRITE_PATH);
         //cockroach
         Sprite cockroach;
         public bool toDelete = false;

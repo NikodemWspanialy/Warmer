@@ -91,7 +91,7 @@ namespace BugTraveler
             AddScore.LoadContent(ADDSCORE_VALUE, Variable.FONT_PATH);
 
             font = new Font(Variable.FONT_PATH);
-            discriptionText = new SFML.Graphics.Text(DISCRIPTION_STRING + game.score.ToString() + " SEC!", font);
+            discriptionText = new SFML.Graphics.Text(DISCRIPTION_STRING +  Math.Round(game.score,2).ToString() + " SEC!", font);
             discriptionText.CharacterSize = (uint)(BLOCK_DIV_Y/2);
             discriptionText.FillColor = Color.White;
             discriptionText.Position = new SFML.System.Vector2f(DISCRIPTION_POS_X, DISCRIPTION_POS_Y);

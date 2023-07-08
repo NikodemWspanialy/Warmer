@@ -16,7 +16,7 @@ namespace BugTraveler
         const uint PLAYER_COLIDER = 40;
         const float MOVING_SPEED = 10F;
         float OBLIQUE_SPEED = (float)(Math.Round(MOVING_SPEED / 1.4, 1));
-        Texture TEXTURE = new Texture(@"C:\PRJs\CS_PRJs\PRJs\BugTraveler\IMG\BEE.png");
+        Texture TEXTURE = new Texture(Variable.PLAYER_SPRITE_PATH);
         const float PLAYER_START_POSITION_X = 100f, PLAYER_START_POSITION_Y = 100f;
 
         Sprite player;
@@ -27,7 +27,7 @@ namespace BugTraveler
         PlayerDirection direction;
         public Player() { }
         public void Update() { Move(); }
-        public void Draw() { /*game.window.Draw(player_colider)*/; game.window.Draw(player);  }
+        public void Draw() {  game.window.Draw(player);  }
         public void LoadContent(Game game, uint x, uint y) 
         {
             this.game = game;

@@ -48,11 +48,11 @@ namespace BugTraveler
             DISCRIPTION_POS_Y = gameY / 2 - 150;
             Discription.Position = new SFML.System.Vector2f(DISCRIPTION_POS_X, DISCRIPTION_POS_Y);
             font = new Font(Variable.FONT_PATH);
-            if (File.Exists( Variable.SCOREBOARD_FILE))
+            if (File.Exists( Variable.SCOREBOARD_PATH))
             {
-                using (FileStream fileStream = new FileStream(Variable.SCOREBOARD_FILE, FileMode.Open, FileAccess.Read))
+                using (FileStream fileStream = new FileStream(Variable.SCOREBOARD_PATH, FileMode.Open, FileAccess.Read))
                 {
-                    //utwórz StreamReader dla FileStream
+                    //StreamReader dla FileStream
                     using (StreamReader reader = new StreamReader(fileStream))
                     {
                         string tempText = reader.ReadToEnd();

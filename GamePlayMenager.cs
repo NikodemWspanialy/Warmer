@@ -15,11 +15,9 @@ namespace BugTraveler
         const int TIMER_POSITION_Y = 20;
         public float time { get; set; }
         Game game;
-        uint gameX, gameY;
 
         Font font;
         Text actualTime;
-        SoundManager soundManager;
 
         public Player player { get; set; }
         public CockroachMenager cockroachMenager { get; set; }
@@ -27,21 +25,17 @@ namespace BugTraveler
         {
             player = new Player();
             cockroachMenager = new CockroachMenager(player);
-            soundManager = new SoundManager();
-            soundManager.PlayGameMusic();
         }
         public void Draw()
         {
-            player.Draw();
             cockroachMenager.Draw();
-            
+            player.Draw();
             game.window.Draw(actualTime);
         }
 
         public void LoadContent(Game game, uint x, uint y)
         {
             this.game = game;
-            gameX = x; gameY = y;
             player.LoadContent(game, x, y);
             cockroachMenager.LoadContent(game, x, y);
             time = 0;
